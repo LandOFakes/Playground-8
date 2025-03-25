@@ -1,0 +1,15 @@
+tests:
+  - description: "Test: Human vs Computer, untimed"
+    command: "python game.py human computer"
+  
+  - description: "Test: Computer vs Computer, untimed"
+    command: "python game.py computer computer"
+  
+  - description: "Test: Human vs Computer, timed"
+    command: "python game.py human computer --timed"
+  
+  - description: "Test: Computer vs Human, timed"
+    command: "python game.py computer human --timed"
+  
+  - description: "Test: Computer vs Computer, timed"
+    command: "python game.py computer computer --timed"
