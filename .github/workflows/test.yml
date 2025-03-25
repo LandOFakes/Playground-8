@@ -35,8 +35,8 @@ jobs:
         python -m unittest discover -s tests  # Assuming your tests are in the 'tests' folder
 
     # Upload test results (if needed)
-    - name: Upload test results
-      uses: actions/upload-artifact@v3
+  - name: Ensure test-results directory exists
+  run: mkdir -p test-results
       with:
         name: test-results
         path: test-results/  # Modify this to the path where your test results are stored (if you save them to a file)
